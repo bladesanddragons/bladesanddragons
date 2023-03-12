@@ -1,0 +1,132 @@
+Path	Mechanic	Name	Tier	Linked	Repeat	Class Feature	Requirements	Description	Notes
+all	armor	Unarmored	1	C		Barbarian-1 Monk-1		When not wearing armor, you can use the light armor box.	Everyone gets one of these
+all	armor	Light Armor	1	C		NOT Wizard and Sorcerer		You are proficient with light armor.	
+caster	armor	Mage Armor	1	C		Wizard-1 Sorcerer-1	Minor Spellcasting	counts as light armor	
+martial	armor	Shielded	1	D			Light Armor		
+caster	armor	Shield Spell	1	D			Minor Spellcasting	counts as shield	
+martial	armor	Heavy Armor	1				Shielded		
+all	resist	Resilient Strength	1			Fighter-1			Less powerful than just improving a stat.
+all	resist	Resilient Dexterity	1						Less powerful than just improving a stat.
+all	resist	Resilient Constitution	1			Fighter-1 Sorcerer-1			Less powerful than just improving a stat.
+all	resist	Resilient Intelligence	1			Wizard-1 Druid-1			Less powerful than just improving a stat.
+all	resist	Resilient Wisdom	1			Wizard-1 Druid-1			Less powerful than just improving a stat.
+all	resist	Resilient Charisma	1						Less powerful than just improving a stat.
+any	resist	Reliable Strength	2				Resilient Strength	Reduce consequence for misfortune rolls with Strength.	
+any	resist	Reliable Dexterity	2				Resilient Dexterity	Reduce consequence for misfortune rolls with Dexterity.	
+any	resist	Reliable Constitution	2				Resilient Constitution	Reduce consequence for misfortune rolls with Constitution.	
+any	resist	Reliable Intelligence	2				Resilient Intelligence	Reduce consequence for misfortune rolls with Intelligence.	
+any	resist	Reliable Wisdom	2				Resilient Wisdom	Reduce consequence for misfortune rolls with Wisdom.	
+any	resist	Reliable Charisma	2				Resilient Charisma	Reduce consequence for misfortune rolls with Charisma.	
+any	resist	Condition Resilience	2					Reduce consequences for one condition type: X	disease, poison, fear, sleep, charm, stun, telepathy
+any	resist	Damage Resilience	2					reduce consequences by 1	fire, cold, acid, lightning, thunder, bludgeoning, piercing, slashing
+any	resist	Physical Resilience	3					reduce consequences by 1	non-magical ; rage? falling?
+any	resist	Condition Immunity	3					immunity to one condition type: X	
+any	resist	Damage Immunity	3					immunity to one damage type: X	
+any	resist	Spell Resistance	3			School of Abjuration 3		+1D to misfortune rolls against spells	
+all	stat	Minor Stat Improvement: STAT	1		TRUE			increase one stat from 0 to 1	
+all	stat	Major Stat Improvement: STAT	2		TRUE			Increase one stat from 1 to 2: STAT	
+all	stat	Epic Stat Improvement: STAT	3		TRUE			Increase one stat from 2 to 3: STAT	
+any	scale	Action Surge	1					Strain 2 to double your scale for one action.	
+martial	attack scale	Major Attack	2			Fighter 2, Barbarian 2, Ranger 2, Paladin 2	Weapon Master	When in combat, your scale counts as two.	Meant as a more flexible version of Extra Attack.
+martial	attack scale	Epic Attack	3			Fighter 3	Major Attack	When in combat, your scale counts as four.	
+martial	attack scale	Legendary Attack	4			Fighter 4	Epic Attack	When in combat, your scale counts as eight.	
+martial	attack position	Controlled Attack	X	B		Rogue-1		+1D when you attack with controlled position.	Sneak Attack. Probably better than the D&D feature. Encourages players to find a controlled position, or trade position for effect, and generally take less strain.
+martial	attack position	Risky Attack	X	B		Fighter-1		+1D when you attack with risky position.	Encourages player to find a risky position, or trade position for effect.
+martial	attack position	Desperate Attack	X	B		Barbarian-1		+1D when you attack with desperate position.	Barbarian's "Reckless Attack" feature. Encourages players to find a desperate position, or trade position for effect, and generally take more strain.
+martial	special armor	Uncanny Dodge	2			Rogue-2		When you can dodge, you can use the special armor box.	Not as good as the original?
+caster	special armor	Arcane Ward	2			School of Abjuration 1	Abjuration Adept	When you can cast spells, you can use the special armor box.	In addition to shield.
+caster	special armor	Projected Ward	2			School of Abjuration 2	Arcane Ward	You can use Arcane Ward to protect within close range.	
+caster	special armor	Counterspell	2				Major Spellcasting	Strain 2 to prevent another spell from being cast.	
+martial	weapon	Light Weapons	1			Rogue-1 Bard-1		one-handed weapons for hunting, dueling, and defeating light armor	
+martial	weapon	Archery	1				Light Weapons	You are proficient with bows and crossbows, which can be light or heavy.	Heavy bows and crossbows are effective against heavy armor.
+martial	weapon	Heavy Weapons	1			Fighter-1	Light Weapons	two-handed weapons for battle and defeating heavy armor	Heavy weapons are effective against heavy armor.
+caster	weapon	Light Blast	1				spellcasting tier 0	attack cantrips count as light weapons	
+caster	weapon	Heavy Blast	1				Light Blast	attack cantrips count as heavy weapons	
+martial	weapon	Weapon Master: Sword	1				Light Weapons	You have potency with swords.	
+martial	weapon	Weapon Master: Axe and Mace	1				Light Weapons	You have potency with axes, hammers, and picks.	
+martial	weapon	Weapon Master: Simple	1				Light Weapons	You have potency with simple weapons: knives, clubs, staves, tools.	mastery still requires knowledge of light weapons
+martial	weapon	Weapon Master: Unarmed	1				Light Weapons	You have potency with unarmed attacks and grappling.	mastery still requires knowledge of light weapons
+martial	weapon	Weapon Master: Bow	1				Archery	You have potency with bows and crossbows.	
+martial	weapon	Weapon Master: Polearm	1				Heavy Weapons	You have potency with polearms and lances.	
+martial	weapon	Martial Arts	1			Monk 1	Weapon Master: Unarmed	Your unarmed attacks are as effective as simple weapons.	
+martial	weapon	Improved Martial Arts	2			Monk 2	Martial Arts	Your unarmed attacks are as effective as light weapons.	
+expert	flashback	Major Foresight	2				3+ Expertise	Flashbacks cost one less strain when you have relevant expertise or potency.	
+caster	spellcasting	Arcane Spellcasting: Intelligence	1					spellcasting tier 0	
+caster	spellcasting	Arcane Spellcasting: Charisma						spellcasting tier 0	
+caster	spellcasting	Divine Spellcasting: Wisdom	1					spellcasting tier 0	
+caster	spellcasting	Divine Spellcasting: Charisma	1					spellcasting tier 0	
+caster	spellcasting	Primal Spellcasting: Wisdom						spellcasting tier 0	
+caster	spellcasting position	Controlled Spellcasting	X	A		Wizard-1 Druid-1	Greater Spellcasting	+1D when you cast a spell with controlled position.	Encourages players to find a controlled position, or trade position for effect, and generally take less strain.
+caster	spellcasting position	Risky Spellcasting	X	A		Cleric-1 Bard-1	Greater Spellcasting	+1D when you cast a spell with risky position.	Encourages players to find a risky position, or trade position for effect.
+caster	spellcasting position	Desperate Spellcasting	X	A		Sorcerer-1 Warlock-1	Greater Spellcasting	+1D when you cast a spell with desperate position.	Encourages players to find a desperate position, or trade position for effect, and generally take more strain.
+caster	spellcasting tier	Minor Spellcasting	1				Spellcasting	Your spellcasting tier is 1.	
+caster	spellcasting tier	Major Spellcasting	2				Minor Spellcasting	Your spellcasting tier is 2.	
+caster	spellcasting tier	Epic Spellcasting	3				Major Spellcasting	Your spellcasting tier is 3.	
+caster	spellcasting tier	Legendary Spellcasting	4				Epic Spellcasting	Your spellcasting tier is 4.	
+caster	metamagic	Elemental Adept	1				Spellcasting	Choose one elemental damage type: acid, cold, fire, lightning, or thunder. The spells you cast penetrate one level of resilience to that damage type.	
+caster	metamagic	Sculpt Spells	1			School of Evocation 1	Spellcasting	Strain 1 to shape an area spell so that a few named targets are not affected.	
+caster	metamagic	Subtle Spells	1				Spellcasting	Strain 1 to cast a spell without making any sound or motion. Prevents counterspell.	
+caster	metamagic	Twinned Spells	1				Spellcasting	When casting a spell of tier X that targets one, strain X to target another nearby.	Strain 0 for cantrips? Seems fine. Buit isn't this just normal magic?
+caster	metamagic	Quickened Spells	1				Spellcasting	Strain 1 to cast a spell in half the usual time.	
+caster	metamagic	Empowered Spells	1				Spellcasting	expertise in attack and damage spells	More efficient than normal push.
+caster	metamagic	Distant Spells	1				Spellcasting	Strain 1 to double the range of a spell.	
+caster	spell school	Abjuration Adept	1				Arcane Spellcasting or Divine Spellcasting	spells that defend or protect	Spellcasting tier is one higher?
+caster	spell school	Conjuration Adept	1				Arcane Spellcasting or Primal Spellcasting	spells that conjure or summon	
+caster	spell school	Divination Adept	1				Spellcasting	spells that gather information	
+caster	spell school	Enchantment Adept	1				Arcane Spellcasting or Primal Spellcasting	spells that enchant or charm	
+caster	spell school	Illusion Adept	1				Spellcasting	spells that create illusions	
+caster	spell school	Evocation Adept	1				Arcane Spellcasting or Primal Spellcasting	spells that attack or damage	
+caster	spell school	Necromancy Adept	1				Arcane Spellcasting or Divine Spellcasting	spells that drain life or control the undead	
+caster	spell school	Transmutation Adept	1				Arcane Spellcasting or Primal Spellcasting	spells that transform or shapeshift	
+caster	spell school	Healing Adept	1				Divine Spellcasting or Primal Spellcasting	spells that heal or cure	
+caster	wildshape	Wildshape	1			Druid 1	Primal Spellcasting or Transmutation Savant	Strain 2 to shapechange yourself into a non-flying beast of one tier lower than your tier for a few hours. Once you are tier 2, you can wildshape into a flying beast.	Physical wounds do not carry over? Earlier than polymorph.
+caster	wildshape	Improved Wildshape	1			Circle of the Moon 1	Wildshape	Wildshape into a beast of your tier.	
+caster	wildshape	Elemental Wildshape	2			Circle of the Moon 2	Improved Wildshape	Wildshape into an elemental.	
+caster	wildshape	Wildshape Spellcasting	3				Wildshape and Spellcasting	You can cast spells while wildshaped.	
+caster	wildshape	Unlimited Wildshape	4				Wildshape	Wildshape does not require strain.	
+all	attunement	Minor Attunement	1		TRUE			You can attune to one minor magic item.	Attunement is critical for game balance. Players can respec.
+all	attunement	Major Attunement	2		TRUE			You can attune to one major magic item.	
+all	attunement	Epic Attunement	3		TRUE			You can attune to one epic magic item.	
+all	attunement	Legendary Attunement	4		TRUE			You can attune to one legendary magic item.	
+all	pet	Familiar	1					tier 0, small	Why not a spell? Because it's permanent?
+all	pet	Greater Familiar	1			Familiar		Your familiar is intelligent and can turn invisible.	invisible, distant link
+all	pet	Beast Companion	1					You have a tier 1 beast companion: medium or large, non-flying.	
+all	pet	Greater Beast Companion	2				Beast Companion	You have a tier 2 beast companion: medium or large.	
+all	pet	Epic Beast Companion	3				Greater Beast Companion	You have a tier 3 beast companion: medium, large, or huge.	
+expert	action roll dice	Expertise: ACTION	1					+1D when rolling for ACTION.	
+expert	skill	Explorer	1			Ranger 1		You are adept when you explore, navigate, or traverse.	
+expert	group action	Expert Leader	1				Expertise	take at most 1 strain when you use expertise to lead a group action	
+martial	push	Flurry of Blows	1			Monk 1	Martial Arts	When attacking, strain 1 for +1D or increased effect, or strain 2 for both.	
+martial	barbarian	Rage	1			Barbarian-1		Strain 2 to enter a rage for up to one minute. While raging: potency with Strength; physical consequences are reduced by one level.	Compare to Wildshape
+	rogue	Thieves' Cant	0			Rogue-1		You know the secret code of thieves, and can hide secret messages in normal speach and writing.	
+martial	rogue	Cunning Action	1			Rogue-1		You are particularly quick when dashing, disengaging, or hiding.	
+		Evasion	2			Rogue-2	Resilient Dexterity	Reduced consequence for misfortune rolls with Dexterity.	Reliable Dexterity
+		Fast Hands	1			Thief 1	Cunning Action	You are particularly quick when using sleight of hand and thieves' tools.	
+		Second-Story Work	1			Thief 1		You can climb as fast as you can walk.	
+expert	assist	Bardic Inspiration	1			Bard 1		You can assist without exposing yourself to consequences.	
+expert	action roll dice	Jack of All Trades	1			Bard 1		When making an action roll you can always roll at least 1D (before accounting for harm).	
+	strain	Song of Rest	1			Bard 1		When you can inspire your allies and yourself during a rest, max strain increases by 1 until the next rest. Does not stack.	
+		Cutting Words	1			College of Lore			
+	initiative	Alert	1					act before others at your tier	
+	strain	Inspiring Leader	1					When you can inspire your allies and yourself during a rest, max strain increases by 1 until the next rest. Does not stack.	Just like Song of Rest?
+	skill	Linguist	0					Proficiency in three languages, and the ability to write in cypher.	
+	feat	Mage Slayer	1						
+	movement	Mobile	1						Just Cunning Action?
+		Spell Sniper							Metamagic increased range?
+		Tavern Brawler							Just Monk martial arts?
+		Tough							
+		War Caster							Desperate Spellcasting?
+		Telekinetic							Spell-like effect: mage hand? Shove?
+		Telepathic							Spell-like effect: telepathy?
+		Lucky	1						Too good.
+	paladin	Lay On Hands	1			Paladin 1	Divine Spellcasting	Strain 2 to heal one harm 1.	Just a spell?
+	push	Divine Smite	1			Paladin 1	Divine Spellcasting	When you channel divine power into your attack, strain 1 for +1D or +1 effect, or strain 2 for both.	Also flurry of blows? Also Ranger?
+	condition	Channel Divinity: Turn Undead					Divine Spellcasting	Strain 2 to inflict fear on undead of your tier or lower.	
+		Channel Divinity: Preserve Life					Divine Spellcasting		
+	condition	Intimidating Presence	2			Path of the Berzerker 2		Increased effect when you intimidate.	inflict fear condition; everyone should have this?
+	critical	Brutal Critical	2			Barbarian 2	Rage	When attacking, critical successes have increased effect.	Have a different distribution in B&D.
+		Spell Mastery	4				Legendary Spellcasting	You can cast tier 1 spells as if the were cantrips.	
+		Greater Spell Mastery	4				Spell Mastery	You can cast tier 2 spells as if the were cantrips.	
+	other	Portent	1			School of Divination 1			You have 2 portent dice. Roll them before a session. Replace any rolls. Low rolls good for anything? Inspiration dice instead?
+	other	Greater Portent	3			School of Divination 3	Portent		3 portent dice
+	senses	The Third Eye	2			School of Divination 2	Divination Savant		permanent Detect Magic or Darkvision or Ethereal Sight or Read Languages or See Invisibility

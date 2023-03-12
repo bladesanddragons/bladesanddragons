@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>B&D Character Sheet</title>
+  <link rel="stylesheet" href="asset/style.css" />
+</head>
+
+<body>
+  <div id="content">
+    <div id="left">
+
+      <div id="description">
+        <div id="tier-box">
+          <span id="Tier" class="value">&nbsp;</span>
+          <span class="label">Tier</span>
+        </div>
+        <!--
+          <div id="pronouns-box">
+            <span class="label">Pronouns</span>
+            <span id="Pronouns" class="value"></span>
+          </div>
+          -->
+        <div id="name-box">
+          <strong class="label">Name</strong>
+          <span id="Name" class="value"></span>
+        </div>
+        <div id="description-box">
+          <strong class="label">Description</strong>
+          <span id="Description" class="value"></span>
+        </div>
+      </div>
+
+      <div id="stats">
+        <div class="stat-block">
+          <div class="stat">
+            <span id="Strength" class="value"></span>
+          </div>
+          <span class="stat-name">Strength</span>
+          <img id="Resilient Strength" class="icon" src="asset/icon/shield.svg">
+          <img id="Reliable Strength" class="icon" src="asset/icon/pentagon.svg">
+          <span class="skill-box">
+            <span id="Expert Slash" class="skill">Slash</span>
+            <span id="Expert Skewer" class="skill">Skewer</span>
+            <span id="Expert Hurl" class="skill">Hurl</span>
+            <span id="Expert Sprint" class="skill">Sprint</span>
+            <span id="Expert Leap" class="skill">Leap</span>
+            <span id="Expert Lift" class="skill">Lift</span>
+            <span id="Expert Grapple" class="skill">Grapple</span>
+            <!--
+              <span id="Expert Shove" class="skill">Shove</span>
+              -->
+          </span>
+        </div>
+        <div class="stat-block">
+          <div class="stat">
+            <span id="Dexterity" class="value"></span>
+          </div>
+          <span class="stat-name">Dexterity</span>
+          <img id="Resilient Dexterity" class="icon" src="asset/icon/shield.svg">
+          <img id="Reliable Dexterity" class="icon" src="asset/icon/pentagon.svg">
+          <span class="skill-box">
+            <span id="Expert Shoot" class="skill">Shoot</span>
+            <span id="Expert Jab" class="skill">Jab</span>
+            <span id="Expert Sneak" class="skill">Sneak</span>
+            <span id="Expert Dodge" class="skill">Dodge</span>
+            <span id="Expert Tumble" class="skill">Tumble</span>
+            <span id="Expert Balance" class="skill">Balance</span>
+            <span id="Expert Operate" class="skill">Operate</span>
+          </span>
+        </div>
+        <div class="stat-block">
+          <div class="stat">
+            <span id="Constitution" class="value"></span>
+          </div>
+          <span class="stat-name">Constitution</span>
+          <img id="Resilient Constitution" class="icon" src="asset/icon/shield.svg">
+          <img id="Reliable Constitution" class="icon" src="asset/icon/pentagon.svg">
+          <span class="skill-box">
+            <span id="Expert Endure" class="skill">Endure</span>
+            <span id="Expert Recover" class="skill">Recover</span>
+            <span id="Expert March" class="skill">March</span>
+            <span id="Expert Trek" class="skill">Trek</span>
+            <span id="Expert Haul" class="skill">Haul</span>
+            <!--
+              <span id="Expert Withstand" class="skill">Withstand</span>
+              Outlast
+              -->
+          </span>
+        </div>
+        <div class="stat-block">
+          <div class="stat">
+            <span id="Intelligence" class="value"></span>
+          </div>
+          <span class="stat-name">Intelligence</span>
+          <img id="Resilient Intelligence" class="icon" src="asset/icon/shield.svg">
+          <img id="Reliable Intelligence" class="icon" src="asset/icon/pentagon.svg">
+          <span class="skill-box">
+            <span id="Expert Study" class="skill">Study</span>
+            <span id="Expert Recall" class="skill">Recall</span>
+            <span id="Expert Analyze" class="skill">Analyze</span>
+            <span id="Expert Calculate" class="skill">Calculate</span>
+            <span id="Expert Design" class="skill">Design</span>
+            <!--
+              <span id="Expert Discern" class="skill">Discern</span>
+              Scrutinize
+              -->
+          </span>
+        </div>
+        <div class="stat-block">
+          <div class="stat">
+            <span id="Wisdom" class="value"></span>
+          </div>
+          <span class="stat-name">Wisdom</span>
+          <img id="Resilient Wisdom" class="icon" src="asset/icon/shield.svg">
+          <img id="Reliable Wisdom" class="icon" src="asset/icon/pentagon.svg">
+          <span class="skill-box">
+            <span id="Expert Perceive" class="skill">Perceive</span>
+            <span id="Expert Intuit" class="skill">Intuit</span>
+            <span id="Expert Judge" class="skill">Judge</span>
+            <span id="Expert Hunt" class="skill">Hunt</span>
+            <span id="Expert Tame" class="skill">Tame</span>
+            <span id="Expert Treat" class="skill">Treat</span>
+            <!--
+              <span id="Expert Empathize" class="skill">Empathize</span>
+              -->
+          </span>
+        </div>
+        <div class="stat-block">
+          <div class="stat">
+            <span id="Charisma" class="value"></span>
+          </div>
+          <span class="stat-name">Charisma</span>
+          <img id="Resilient Charisma" class="icon" src="asset/icon/shield.svg">
+          <img id="Reliable Charisma" class="icon" src="asset/icon/pentagon.svg">
+          <span class="skill-box">
+            <span id="Expert Persuade" class="skill">Persuade</span>
+            <span id="Expert Deceive" class="skill">Deceive</span>
+            <span id="Expert Inspire" class="skill">Inspire</span>
+            <span id="Expert Command" class="skill">Command</span>
+            <span id="Expert Perform" class="skill">Perform</span>
+            <span id="Expert Act" class="skill">Act</span>
+            <!--
+              <span id="Expert Ply" class="skill">Ply</span>
+              -->
+          </span>
+        </div>
+        <div class="skill-box">
+          <strong>Any</strong>
+          <span id="Expert Intimidate" class="skill">Intimidate</span>
+          <span id="Expert Impress" class="skill">Impress</span>
+          Gather info
+        </div>
+        <div id="combat-expertise-selected">
+          <strong>Combat expertise</strong>
+          <span id="Combat Expertise" class="value underline"></span>
+        </div>
+        <div id="combat-expertise-choice">
+          <strong>Combat expertise</strong>
+          <span id="Expert Attacker" class="skill">attacker</span>
+          /
+          <span id="Expert Caster" class="skill">caster</span>
+          <br />
+          when
+          <span id="Controlled Expert" class="skill">controlled</span>
+          /
+          <span id="Risky Expert" class="skill">risky</span>
+          /
+          <span id="Desperate Expert" class="skill">desperate</span>
+        </div>
+      </div>
+
+    </div> <!-- left -->
+
+    <div id="middle">
+      <img id="logo" src="asset/image/bnd-logo-wide.svg" />
+
+      <div id="status">
+        <div class="row">
+          <div id="armor" class="left">
+            <strong id="armor" class="label">Armor</strong>
+            <p>
+              <img id="Light Armor" class="icon" src="asset/icon/circle.svg">
+              <span class="type">Light</span>
+              <img class="tick-box" src="asset/icon/square.svg">
+              <img class="tick-box" src="asset/icon/square.svg">
+            </p>
+            <p>
+              <img id="Shield" class="icon" src="asset/icon/circle.svg">
+              <span class="type">Shield</span>
+              <img class="tick-box" src="asset/icon/square.svg">
+              <img class="tick-box" src="asset/icon/square.svg">
+            </p>
+            <p>
+              <img id="Heavy Armor" class="icon" src="asset/icon/circle.svg">
+              <span class="type">Heavy</span>
+              <img class="tick-box" src="asset/icon/square.svg">
+              <img class="tick-box" src="asset/icon/square.svg">
+            </p>
+            <p>
+              <img id="Special Armor" class="icon" src="asset/icon/circle.svg">
+              <span class="type">Special</span>
+              <img class="tick-box" src="asset/icon/square.svg">
+              <img class="tick-box" src="asset/icon/square.svg">
+            </p>
+            <p>Clear armor with <strong>rest</strong>.</p>
+          </div>
+          <div id="weapons">
+            <strong class="label">Weapons</strong>
+            <p>
+              <img id="Unarmed" class="icon" src="asset/icon/circle.svg">
+              <img id="Unarmed Adept" class="icon" src="asset/icon/diamond.svg">
+              Unarmed
+            </p>
+            <p>
+              <img id="Simple Weapons" class="icon" src="asset/icon/circle.svg">
+              <img id="Simple Weapons Adept" class="icon" src="asset/icon/diamond.svg">
+              Simple
+            </p>
+            <p>
+              <img id="Light Weapons" class="icon" src="asset/icon/circle.svg">
+              <img id="Light Weapons Adept" class="icon" src="asset/icon/diamond.svg">
+              Light
+            </p>
+            <p>
+              <img id="Heavy Weapons" class="icon" src="asset/icon/circle.svg">
+              <img id="Heavy Weapons Adept" class="icon" src="asset/icon/diamond.svg">
+              Heavy
+            </p>
+            <p>
+              <img id="Ranged Weapons" class="icon" src="asset/icon/circle.svg">
+              <img id="Ranged Weapons Adept" class="icon" src="asset/icon/diamond.svg">
+              Ranged
+            </p>
+          </div>
+        </div>
+        <div class="row center">
+          <p>Use armor to <strong>block</strong> relevant harm.</p>
+          <p>Use strain to <strong>resist</strong> consequences.</p>
+        </div>
+        <div id="strain-box">
+          <p>
+            <strong class="label">Strain</strong>
+            <span>Reduce with <strong>rest</strong>.</span>
+            <span class="smallcap">Max 5+Con</span>
+          </p>
+          <div id="strain-track" class="center">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <span class="thin"></span>
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            <img class="tick-box" src="asset/icon/square.svg">
+            &nbsp;
+            <strong class="label">Out</strong>
+          </div>
+        </div>
+        <div id="harm-box">
+          <strong class="label">Harm</strong>
+          <span>Heal with <strong>downtime</strong> or magic.</span>
+          <table id="harm">
+            <tr>
+              <td class="harm-level">3</td>
+              <td colspan="2"></td>
+              <td class="penalty smallcap">Down</td>
+            </tr>
+            <tr>
+              <td class="harm-level">2</td>
+              <td></td>
+              <td></td>
+              <td class="penalty">-1d</td>
+            </tr>
+            <tr>
+              <td class="harm-level">1</td>
+              <td></td>
+              <td></td>
+              <td class="penalty">-1e</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="notes">
+        <strong class="label">Gear / Spells / Notes</strong>
+      </div>
+
+    </div> <!-- middle -->
+
+    <div id="right">
+
+      <div id="abilities">
+        <strong class="label">Abilities</strong>
+        <strong id="Class" class="value label"></strong>
+      </div>
+    </div> <!-- right -->
+
+    <div id="rules">
+      <p class="center">
+        <strong class="label">Take Heroic Action!</strong>
+      </p>
+      <p>
+        <strong>Trade</strong>
+        <span>risk for reward</span>
+      </p>
+      <p>
+        <strong>Push</strong>
+        <span>strain 2 for +1d <strong>or</strong> +1e</span>
+      </p>
+      <p>
+        <strong>Assist</strong>
+        <span>strain 1 for +1d to teammate</span>
+      </p>
+      <p>
+        <strong>Protect</strong>
+        <span>take consequences for teammate</span>
+      </p>
+      <p>
+        <strong>Lead a Group Action</strong>
+        <span>strain for each 1-3</span>
+      </p>
+      <p>
+        <strong>Set Up an Action</strong>
+        <span>for a teammate</span>
+      </p>
+      <p>
+        <strong>Flashback</strong>
+        <span>strain 0-3 for complexity</span>
+      </p>
+    </div>
+
+    <div id="icons">
+      <p class="center">Mark your selected <strong>abilities</strong>:</p>
+      <p>
+        <u>Underline</u> <strong>expertise</strong>
+        strain 1 to <strong>push</strong>
+      </p>
+      <p>
+        <img class="icon" src="asset/icon/circle-fill.svg">
+        Selected, proficient, available
+      </p>
+      <p>
+        <img class="icon" src="asset/icon/diamond-fill.svg">
+        Adept: +1e on <strong>action</strong> rolls
+      </p>
+      <p>
+        <img class="icon" src="asset/icon/shield-fill.svg">
+        Resilience: +1d on <strong>saving</strong> rolls
+      </p>
+      <p>
+        <img class="icon" src="asset/icon/pentagon-fill.svg">
+        Reliable: -1c on <strong>saving</strong> rolls
+        <!-- Reliable: decreased <strong>consequence</strong> on <strong>saving</strong> rolls -->
+      </p>
+    </div>
+
+    <div id="url">
+      <a href="https://bladesanddragons.com">
+        https://blades<span class="thin"></span>and<span class="thin"></span>dragons.com
+      </a>
+    </div>
+
+  </div> <!-- content -->
+  <script src="data.json"></script>
+  <script src="asset/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+asset/font/*
+build/
+junk/
+settings.env
+site/
+.venv/
