@@ -15,11 +15,14 @@ CHAR_PDFS := $(foreach C,${CLASSES},build/character/${C}.pdf)
 
 # General
 
-build/ build/character/ build/template/ site/:
+build/ build/character/ build/template/ build/rule/ site/:
 	mkdir -p $@
 
+build/rule/asset/: | build/rule/
+	cd $| && ln -s ../../asset .
+
 build/character/asset/: | build/character/
-	ln -s asset/ $|
+	cd $| && ln -s ../../asset .
 
 .PHONY: clean
 clean:
@@ -62,12 +65,34 @@ build/character/%.pdf: build/character/%.html asset/ | build/character/asset/
 build/characters.pdf: ${CHAR_PDFS}
 	pdfunite $^ $@
 
-site/characters.pdf: build/characters.pdf
+# Reference
+
+build/rule/reference.html: src/script/reference.py src/template/reference.html src/rule/* | build/rule/
+	python3 $< $@
+
+build/rule/%.pdf: build/rule/%.html asset/ | build/rule/asset/
+	${CHROME} --headless \
+	--disable-gpu \
+	--ignore-certificate-errors \
+	--print-to-pdf-no-header \
+	--print-to-pdf=$@ $<
+
+# Site
+
+site/BladesAndDragons-v0-Characters.pdf: build/characters.pdf
 	cp $< $@
+	chmod +r $@
+
+site/BladesAndDragons-v0-Reference.pdf: build/rule/reference.pdf
+	cp $< $@
+	chmod +r $@
+
+site: site/BladesAndDragons-v0-Characters.pdf
+site: site/BladesAndDragons-v0-Reference.pdf
 
 .PHONY: all
-all: site/characters.pdf
+all: site
 
 .PHONY: watch
 watch:
-	ls -d src/rule/* src/template/* src/script/* asset/*.js asset/*.css | entr make clean all
+	ls -d Makefile src/rule/* src/template/* src/script/* asset/*.js asset/*.css | entr make clean all

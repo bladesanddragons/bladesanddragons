@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "CloisterBlack";
+  src: url("font/CloisterBlack.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Prida01";
+  src: url("font/Prida01.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prida01";
+  src: url("font/Prida01Light.otf") format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Prida01";
+  src: url("font/Prida01Black.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("font/Lora-VariableFont_wght.ttf") format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("font/Lora-Italic-VariableFont_wght.ttf") format('truetype');
+  font-style: italic;
+}
+
+@page {
+  size: Letter landscape;
+  margin: 0.5in;
+}
+
+body {
+  margin: 0;
+  font-family: Lora, Arial, serif;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Prida01", Arial, serif;
+  font-variant: small-caps;
+}
+
+h1 {
+  font-size: 18pt;
+  color: #888;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16pt;
+  color: #888;
+}
+
+h3 {
+  font-size: 14pt;
+  color: #888;
+}
+
+h4 {
+  font-size: 12pt;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6pt;
+}
+
+ul {
+  padding-left: 12pt;
+  list-style: circle;
+}
+
+#title {
+  font-family: "Prida01", "Lora", Georgia, serif;
+  text-align: center;
+}
+
+#logo {
+  position: relative;
+  top: 2in;
+}
+
+#author {
+  position: relative;
+  top: 4in;
+  width: 60%;
+}
+
+#version {
+  position: relative;
+  top: 4in;
+  font-size: 36pt;
+  line-height: 1;
+}
+
+#url {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#url a {
+  font-size: 14pt;
+  text-decoration: none;
+  color: #666;
+}
+
+#overview {
+  counter-reset: page;
+}
+
+.page {
+  page-break-after: always;
+  counter-increment: page;
+}
+
+.page-number {
+  float: right;
+  margin-top: 4pt;
+  font-family: "Prida01", Arial, serif;
+  font-variant: small-caps;
+}
+
+.page-number::after {
+  content: " p" counter(page);
+}
+
+.page-number img {
+  height: 12pt;
+  margin-right: 2pt;
+  vertical-align: middle;
+}
+
+.cloister {
+  font-family: "CloisterBlack", Arial, serif;
+}
+
+.columns {
+  column-count: 3;
+}
+
+.col {
+  break-after: column;
+  word-break: break-word;
+}
+
+.center {
+  text-align: center;
+}
+
+.label {
+  font-size: 14pt;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #444;
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 4pt;
+}
+
+.thin {
+  display: inline-block;
+  width: 0.1em;
+}

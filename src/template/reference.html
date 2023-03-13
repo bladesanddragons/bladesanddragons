@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blades & Dragons: Reference v0</title>
+  <link rel="stylesheet" href="asset/reference.css" />
+</head>
+
+<body>
+  <div id="content">
+
+    <!--
+    Double-Sided Pages:
+    
+    title, frontmatter
+    overview, conversation
+    action, mechanics
+    magic, spells
+    characters, abilities
+    creatures, combat
+    exploration, social
+
+    adventure, example ?
+    glossary, glossary ?
+    -->
+
+    <div id="title" class="page">
+      <img id="logo" src="asset/image/bnd-logo-wide.svg" />
+      <img id="author" src="asset/image/bnd-author.svg" />
+      <div id="version" class="center label">
+        Reference Sheets
+        <br />
+        {{version}}
+      </div>
+      <div id="url">
+        <a href="https://bladesanddragons.com">
+          https://blades<span class="thin"></span>and<span class="thin"></span>dragons.com
+        </a>
+      </div>
+    </div>
+
+    <div id="frontmatter" class="page columns">
+      {% for title, content in frontmatter.items() %}
+      <div class="col">
+        <h2>{{title}}</h2>
+        {{content|safe}}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div id="overview" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Overview</h1>
+      <div class="columns">
+        {% for title, section in overview.items() %}
+        {{section["Rules"]|safe}}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div id="conversation" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Conversation</h1>
+      <div class="columns">
+        <div class="col">
+          <h2>Player</h2>
+        </div>
+        <div class="col">
+          <h2>Actions</h2>
+        </div>
+        <div class="col">
+          <h2>Dungeon Master</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="action" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Action Roll</h1>
+    </div>
+
+    <div id="mechanics" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Game Mechanics</h1>
+    </div>
+
+    <div id="magic" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Magic</h1>
+    </div>
+
+    <div id="spells" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Spell Examples</h1>
+    </div>
+
+    <div id="characters" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Characters</h1>
+    </div>
+
+    <div id="abilities" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Abilities</h1>
+    </div>
+
+    <div id="creatures" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Creatures</h1>
+    </div>
+
+    <div id="combat" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Combat</h1>
+    </div>
+
+    <div id="exploration" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Exploration</h1>
+    </div>
+
+    <div id="social" class="page">
+      <div class="page-number">
+        <img src="asset/image/bnd-logo-wide.svg" />
+        {{version}}
+      </div>
+      <h1>Social</h1>
+    </div>
+
+  </div>
+</body>
+
+</html>
