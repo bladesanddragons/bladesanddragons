@@ -3,7 +3,7 @@ with import <nixpkgs> {};
 stdenv.mkDerivation {
   name = "python";
   buildInputs = [
-    python3
+    python310Packages.ujson
     poppler_utils
     ungoogled-chromium
   ];
@@ -11,6 +11,7 @@ stdenv.mkDerivation {
     SOURCE_DATE_EPOCH=$(date +%s)
     python -m venv .venv
     source .venv/bin/activate
-    # pip install -r requirements.txt
+    pip install 'python-lsp-server[all]'
+    pip install -r requirements.txt
   '';
 }
